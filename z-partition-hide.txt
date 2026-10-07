@@ -1,0 +1,5 @@
+Remove-PartitionAccessPath -DiskNumber (Get-Partition -DriveLetter Z).DiskNumber -PartitionNumber 1 -AccessPath "Z:\"
+
+
+///////////check
+Get-Partition | Where-Object DriveLetter -eq "Z"
